@@ -90,6 +90,8 @@
 /system/lib/libWVphoneAPI.so
 /system/lib/libxml.so
 /system/vendor/bin/vss_init
+/system/vendor/firmware/a330_pfp.fw
+/system/vendor/firmware/a330_pm4.fw
 /system/vendor/firmware/adsp.b00
 /system/vendor/firmware/adsp.b01
 /system/vendor/firmware/adsp.b02
@@ -217,15 +219,21 @@
 /system/vendor/lib/libsensor_user_cal.so
 /system/vendor/lib/libTimeService.so
 /system/vendor/lib/libtime_genoff.so
+<<<<<<< HEAD
 /system/vendor/lib/libvdmengine.so
 /system/vendor/lib/libvdmfumo.so
+=======
+>>>>>>> 4924132... Update for KOT49H
 /system/vendor/lib/libvss_common_core.so
 /system/vendor/lib/libvss_common_idl.so
 /system/vendor/lib/libvss_common_iface.so
 /system/vendor/lib/libvss_nv_core.so
 /system/vendor/lib/libvss_nv_idl.so
 /system/vendor/lib/libvss_nv_iface.so
+<<<<<<< HEAD
 /system/vendor/lib/libwvdrm_L1.so
 /system/vendor/lib/libwvm.so
 /system/vendor/lib/libWVStreamControlAPI_L1.so
 /system/vendor/lib/mediadrm/libwvdrmengine.so
+=======
+>>>>>>> 4924132... Update for KOT49H
