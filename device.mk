@@ -325,6 +325,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
 
+# init.d scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/00random:system/etc/init.d/00random
+
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
