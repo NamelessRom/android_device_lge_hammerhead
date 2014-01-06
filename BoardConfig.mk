@@ -101,7 +101,7 @@ BOARD_SEPOLICY_DIRS := \
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/hammerhead/mkbootimg.mk
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
+TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 # The list below is order dependent
@@ -121,7 +121,11 @@ TARGET_TOUCHBOOST_FREQUENCY:= 1200
 RECOVERY_FSTAB_VERSION := 2
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
 # Flags
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
+# Flashlight
+USE_TORCH := true
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
