@@ -128,7 +128,8 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-# Flashlight
+# Additional Apps
 USE_TORCH := true
+# USE_DEVICE_CONTROL := true
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
