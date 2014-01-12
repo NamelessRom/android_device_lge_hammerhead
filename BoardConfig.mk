@@ -131,4 +131,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 # Additional Apps
 USE_TORCH := true
 
+# Kernel handles input boosting
+TARGET_POWERHAL_NO_TOUCH_BOOST := true
+
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
