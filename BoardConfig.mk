@@ -130,6 +130,5 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Additional Apps
 USE_TORCH := true
-# USE_DEVICE_CONTROL := true
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
