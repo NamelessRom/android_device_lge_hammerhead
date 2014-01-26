@@ -202,6 +202,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bdAddrLoader
 
+# msm_rng entropy feeder
+PRODUCT_PACKAGES += \
+    qrngd \
+    qrngp
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
