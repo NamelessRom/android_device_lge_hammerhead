@@ -15,13 +15,7 @@
 #
 
 # Inherit APNs list
-$(call inherit-product, vendor/nameless/config/apns.mk)
-
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/nameless/config/common.mk)
+$(call inherit-product, vendor/nameless/config/common_phone.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/hammerhead/device.mk)
