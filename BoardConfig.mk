@@ -135,7 +135,4 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-# Kernel handles input boosting
-TARGET_POWERHAL_NO_TOUCH_BOOST := true
-
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
