@@ -44,4 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hammerhead BUILD_FINGERPRINT=google
 # Inherit the SIM Toolkit
 PRODUCT_PACKAGES += Stk
 
-$(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/hammerhead/hammerhead-vendor.mk)
