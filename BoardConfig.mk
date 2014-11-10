@@ -51,8 +51,8 @@ AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerheadcaf/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/lge/hammerheadcaf/bluetooth/vnd_hammerhead.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerhead/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/lge/hammerhead/bluetooth/vnd_hammerhead.txt
 
 # Wifi related defines
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
@@ -70,11 +70,11 @@ BOARD_USES_SECURE_SERVICES := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOOTLOADER_BOARD_NAME := hammerhead
-TARGET_BOARD_INFO_FILE := device/lge/hammerheadcaf/board-info.txt
+TARGET_BOARD_INFO_FILE := device/lge/hammerhead/board-info.txt
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
 
-BOARD_EGL_CFG := device/lge/hammerheadcaf/egl.cfg
+BOARD_EGL_CFG := device/lge/hammerhead/egl.cfg
 
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
@@ -103,14 +103,14 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
-TARGET_RECOVERY_FSTAB = device/lge/hammerheadcaf/fstab.hammerhead
+TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/hammerheadcaf
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/hammerhead
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
+TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 # SELinux policies
@@ -119,7 +119,7 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # Board
 BOARD_SEPOLICY_DIRS += \
-    device/lge/hammerheadcaf/sepolicy
+    device/lge/hammerhead/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     app.te \
@@ -173,9 +173,9 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/lge/hammerheadcaf/cmhw
+BOARD_HARDWARE_CLASS := device/lge/hammerhead/cmhw
 
--include vendor/lge/hammerheadcaf/BoardConfigVendor.mk
+-include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true

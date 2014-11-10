@@ -23,7 +23,7 @@
 set -e
 
 VENDOR=lge
-DEVICE=hammerheadcaf
+DEVICE=hammerhead
 
 if [ $# -eq 0 ]; then
   SRC=adb
