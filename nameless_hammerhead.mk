@@ -39,7 +39,7 @@ TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 TARGET_VARIANT_CONFIG := custom_hammerhead_defconfig
 TARGET_SELINUX_CONFIG := custom_hammerhead_defconfig
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hammerhead BUILD_FINGERPRINT=google/hammerhead/hammerhead:4.4.4/KTU84P/1227136:user/release-keys PRIVATE_BUILD_DESC="hammerhead-user 4.4.4 KTU84P 1227136 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hammerhead BUILD_FINGERPRINT=google/hammerhead/hammerhead:5.0.1/LRX22C/1602158:user/release-keys PRIVATE_BUILD_DESC="hammerhead-user 5.0.1 LRX22C 1602158 release-keys"
 
 # Inherit the SIM Toolkit
 PRODUCT_PACKAGES += Stk
