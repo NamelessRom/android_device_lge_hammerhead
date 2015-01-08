@@ -107,4 +107,7 @@ on property:init.svc.bootanim=stopped
     # scheduler
     write /sys/block/mmcblk0/queue/scheduler row
 
+    # devfreq
+    write /sys/class/devfreq/qcom,cpubw.41/governor "cpubw_hwmon"
+
     start mpdecision
