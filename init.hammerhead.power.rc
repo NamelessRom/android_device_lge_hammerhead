@@ -109,5 +109,6 @@ on property:init.svc.bootanim=stopped
 
     # devfreq
     write /sys/class/devfreq/qcom,cpubw.41/governor "cpubw_hwmon"
+    write /sys/class/devfreq/0.qcom,cache/governor "cache_hwmon"
 
     start mpdecision
