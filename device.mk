@@ -245,6 +245,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    HammerheadDoze
+
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_hammerhead
+
 # I/O Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=cfq
@@ -309,10 +317,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.pedometer=false \
     ro.qti.sensors.pam=false \
     ro.qti.sdk.sensors.gestures=false
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    HammerheadDoze
 
 # Enable some debug messages by default
 PRODUCT_PROPERTY_OVERRIDES += \
