@@ -293,6 +293,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.tap=false \
     ro.qti.sensors.facing=false \
     ro.qti.sensors.tilt=false \
+    ro.qti.sensors.tilt_detector=true \
     ro.qti.sensors.amd=false \
     ro.qti.sensors.rmd=false \
     ro.qti.sensors.vmd=false \
